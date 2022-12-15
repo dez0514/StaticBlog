@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 16
           cache: npm
+      - run: npm ci lockfile
           # cache-dependency-path: /package-lock.json
       - name: Install and Build
         run: 
