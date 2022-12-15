@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 主标题
+  name: 主标题111
   text: 内容信息
   tagline: 副内容信息
   image:
