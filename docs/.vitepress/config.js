@@ -12,7 +12,7 @@ export default defineConfig({
     ],
     ["link", { rel: "icon", href: "/assets/favicon.ico" }]
   ],
-  title: 'aaa',
+  title: 'test',
   description: 'A VitePress site',
   themeConfig: {
     logo: '/test.jpg',
