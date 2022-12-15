@@ -7,18 +7,17 @@ on:
  
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: npm
-      - run: npm ci lockfile
           # cache-dependency-path: /package-lock.json
       - name: Install and Build
         run: 
-          npm ci
+          npm install
           npm run docs:build
  
       - name: Deploy
