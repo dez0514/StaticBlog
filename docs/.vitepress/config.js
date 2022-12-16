@@ -16,7 +16,7 @@ export default defineConfig({
   description: 'A VitePress site',
   themeConfig: {
     logo: '/test.jpg',
-    siteTitle: '昨天太近，明天太远333',
+    siteTitle: '昨天太近，明天太远33367',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dez0514' }
     ],
