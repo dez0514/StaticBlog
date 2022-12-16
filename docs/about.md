@@ -1,2 +1,6 @@
-#### about
-oh baby come
+---
+layout: page
+---
+
+<about />
+

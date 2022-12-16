@@ -10,30 +10,34 @@ export default defineConfig({
           "width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
       },
     ],
-    ["link", { rel: "icon", href: "/assets/favicon.ico" }]
+    ["link", { rel: "icon", href: "/favicon.ico" }]
   ],
-  title: 'test',
-  description: 'A VitePress site',
+  title: "static blog",
+  description: 'A VitePress Site',
   themeConfig: {
-    logo: '/test.jpg',
-    siteTitle: '昨天太近，明天太远67',
+    logo: { // string | object
+      src: '/test.jpg',
+      style: 'border-radius: 50%'
+    },
+    siteTitle: '昨天太近，明天太远',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dez0514' }
     ],
     nav: [
-      { text: "Guide", link: "" },
-      { text: "GuideTest", link: "" },
-      {
-        text: "Drop Menu",
-        items: [
-          { text: 'Item A', link: '/item-1' },
-          { text: 'Item B', link: '/item-2' }
-        ]
-      }
+      { text: "文章", link: "/article" },
+      { text: "归档", link: "/archive" },
+      { text: "关于", link: "/about" },
+      // {
+      //   text: "Drop Menu",
+      //   items: [
+      //     { text: 'ItemA', link: '' },
+      //     { text: 'ItemB', link: '' }
+      //   ]
+      // }
     ],
     footer: {
-      message: '其实我也不知道写啥注脚',
-      copyright: '那我就随便写个吧'
+      message: '独揽月下萤火，照亮一纸寂寞',
+      copyright: 'enjoy'
     }
   }
 })
